@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: aliceblue;
+}
+#heading{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 248, 248);
+}
+
+#navList{
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 15px;
+     list-style: none;
+     font-size: 2.5rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+}
+nav{
+    width: 100%;
+    overflow-x: none;
+}
+.navContainer{
+    width: 100vw;
+    background-color: #0093E9;
+background-image: linear-gradient(160deg,#0093E9 0%, #80D0C7 100%);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container{
+    height : 100%;
+    width : 100%;
+    overflow-x: none;
+    
+}
+#navLogo{
+    font-size: 2.5rem;
+    color: azure;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#navItems{
+    display: flex;
+    gap: 40px; 
+}
+.footerBox{   
+    margin-top: 10px;
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+text-align: center;
+overflow: none;
+min-height: 40px;
+
+}
+.footerBox p{
+    color: azure;
+    font-size: 2rem ;
+}
+.contentBox{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid black ; */
+    background-color: white;
+    padding : 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 1px 3px 3px rgb(7, 0, 0);
+
+}
+.Items{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(41, 122, 209);
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.rightbox{
+    position: relative;
+    overflow: hidden;
+}
+.rightbox img{
+    max-width: 200px;
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;
+}
+.rightbox:hover img{
+    transform: scale(1.2);
+}
+
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+.ingbox{
+    font-size: 1.4rem;
+}
+.recipebox{
+    font-size: 1.1rem;
+}
+
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(183, 176, 176, 0.456);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.rightbox:hover .overlay{
+    opacity: 1;
+
+}
+
+.rightbox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* .websiteimg{
+    height: 100%;
+    width: 100%;
+}
+ */
